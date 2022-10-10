@@ -19,6 +19,10 @@ for(i = 1; i <= 100; i++){
     else{
         buzzFizz = i;
     }
-
-    console.log(buzzFizz)
+    // creare un elemeto all'interno del div .container che visualizzerà BuzzFizz
+    // first way
+    let buzzFizzCard = `<div class="card">${buzzFizz}</div>`;
+    console.log(buzzFizzCard)
+    document.querySelector(".row").innerHTML += buzzFizzCard;
+    
 }
