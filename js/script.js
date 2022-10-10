@@ -24,5 +24,12 @@ for(i = 1; i <= 100; i++){
     let buzzFizzCard = `<div class="card">${buzzFizz}</div>`;
     console.log(buzzFizzCard)
     document.querySelector(".row").innerHTML += buzzFizzCard;
-    
+    // second way
+    // let buzzFizzCard = document.createElement("div");
+    // buzzFizzCard.classList.add("card");
+    // buzzFizzCard.innerHTML = buzzFizz;
+    // document.querySelector(".row").append(buzzFizzCard)
+    // console.log(buzzFizzCard)
+
+
 }
