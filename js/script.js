@@ -6,14 +6,19 @@ let i = 0
 // let multipleOfFive = 
 
 for(i = 1; i <= 100; i++){
-    if(i % 5 === 0 ){
-        i = ("Buzz")
+    let buzzFizz = ""
+    if (i % 3 === 0 && i % 5 === 0 ){
+        buzzFizz = "FizzBuzz"
+    }
+    else if(i % 5 === 0 ){
+        buzzFizz = "Buzz"
     }
     else if (i % 3 === 0 ){
-        i = ("Fizz");
+        buzzFizz = "Fizz"
     }
-    else if (i % 3 === 0 && i % 5 === 0 ){
-        i = ("BuzzFizz");
+    else{
+        buzzFizz = i;
     }
-        console.log(i)
+
+    console.log(buzzFizz)
 }
