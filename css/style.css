@@ -6,6 +6,10 @@
 
 :root{
     --main-bg:#083B4C;
+    --buzz-bg:#FFD166;
+    --fizz-bg:#0BD6A1;
+    --buzzFizz-bg:#F0466F;
+    --no-buzzFizz-bg:#1389B2;
 }
 
 
@@ -17,6 +21,18 @@ html{
 .main-bg{
     background-color: var(--main-bg);
 }
+.buzz-bg{
+    background-color: var(--buzz-bg);
+}
+.fizz-bg{
+    background-color: var(--fizz-bg);
+}
+.buzzfizz-bg{
+    background-color: var(--buzzFizz-bg);
+}
+.no-buzzfizz-bg{
+    background-color: var(--no-buzzFizz-bg);
+}
 /* utilities */
 .container{
     width: 80%;
@@ -26,10 +42,15 @@ html{
 
 .row{
     display: flex;
-    flex-wrap:wrap;Ì
+    flex-wrap:wrap;
     gap:1em;
 }
 
 .card{
+    width: calc(100% / 8 - 1em);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
